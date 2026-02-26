@@ -1,3 +1,28 @@
+
 body{
-    background-color: #53777a;
+    background-color: var(--quarta);
+}
+
+:root{
+    --primeira: #951f2b;   
+    --segunda: #f5f4d7;
+    --terceria: #e0dfb1;
+    --quarta: #a5a36c;
+    --quinta: #535233;
+}
+
+.first{
+    color: #f5f4d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar{
+    height: 100%;
+    position: fixed;
+    background-color: var(--quinta);
+    width: 60px;
+    left: 0;
+    top: 0;
+    color: var(--quarta);
 }
