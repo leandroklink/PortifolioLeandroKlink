@@ -12,17 +12,22 @@ body{
 }
 
 .first{
-    color: #f5f4d7;
+    color: var(--segunda);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sidebar{
-    height: 100%;
+.upbar{
+    width: 100%;
     position: fixed;
-    background-color: var(--quinta);
-    width: 60px;
+    height: 60px;
     left: 0;
     top: 0;
     color: var(--quarta);
+    padding: 15px;
+}
+.linkbar{
+    color: var(--segunda);
+    padding: 5px;
+    font-size: 2em;
 }
