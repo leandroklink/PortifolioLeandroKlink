@@ -1,6 +1,8 @@
 
 body{
     background-color: var(--quarta);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -10,12 +12,32 @@ body{
     --quarta: #a5a36c;
     --quinta: #535233;
 }
+.container{
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
-.first{
+.first{  flex: 1;
+    padding-top: 100px;
+    padding-bottom: 80px;
     color: var(--segunda);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;           /* coloca lado a lado */
+    align-items: center;     /* alinha verticalmente */
+    justify-content: space-between;
+    gap: 5px;               /* espaço entre texto e imagem */
+}
+
+.text{
+    flex: 1;
+}
+
+.about{
+    color: var(--segunda);
+}
+
+.first  h1{
+    font-size: 3zzrem;
 }
 .upbar{
     width: 100%;
@@ -30,4 +52,11 @@ body{
     color: var(--segunda);
     padding: 5px;
     font-size: 2em;
+}
+.profile{
+    border-radius: 100%;
+    border: 2px solid var(--segunda);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
