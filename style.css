@@ -5,20 +5,67 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 :root{
-    --primeira: #951f2b;   
-    --segunda: #f5f4d7;
-    --terceria: #e0dfb1;
-    --quarta: #a5a36c;
-    --quinta: #535233;
+    --primeira: #daf3ea;   
+    --segunda: #f7f4e8;
+    --terceria: #85e6c0;
+    --quarta: #141418;
+    --quinta: #6bb39b;
+    --sexta: #588b7a;
 }
+h1{
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h2{
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--quinta);
+}
+.about p{
+    margin-bottom: 30px;
+}
+p {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.botao{
+    color: var(--primeira);
+    padding: 10px;
+    border: 2px solid var(--primeira);
+    border-radius: 4px;
+    background-color: var(--quinta);
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+
+}
+.botao:hover{
+    color: var(--primeira);
+    padding: 10px;
+    border: 2px solid var(--primeira);
+    border-radius: 4px;
+    background-color: var(--sexta);
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .container{
-    max-width: 970px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-.first{  flex: 1;
+.first{  
+    flex: 1;
     padding-top: 100px;
     padding-bottom: 80px;
     color: var(--segunda);
@@ -31,14 +78,16 @@ body{
 .text{
     flex: 1;
 }
+.tecnologias{
+    margin-top: 70px;
+}
 
-.about{
+.about, .tecnologias{
     color: var(--segunda);
 }
 
-.first  h1{
-    font-size: 3zzrem;
-}
+
+
 .upbar{
     width: 100%;
     position: fixed;
@@ -54,9 +103,10 @@ body{
     font-size: 2em;
 }
 .profile{
-    border-radius: 100%;
+    border-radius: 25px;
     border: 2px solid var(--segunda);
     width: 250px;
     height: 250px;
     object-fit: cover;
+    
 }
