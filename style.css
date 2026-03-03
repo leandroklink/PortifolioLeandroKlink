@@ -3,6 +3,7 @@ body{
     background-color: var(--quarta);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -18,6 +19,7 @@ h1{
     font-family: "poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: var(--primeira);
 }
 h2{
     font-family: "poppins", sans-serif;
@@ -25,6 +27,30 @@ h2{
     font-style: normal;
     color: var(--quinta);
 }
+h3{
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--quinta);
+}
+
+.tec{
+    border: 2px solid var(--primeira);
+    border-radius: 7px;
+    color: var(--primeira);
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 25px;
+    padding: 8px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
 .about p{
     margin-bottom: 30px;
 }
@@ -43,7 +69,6 @@ p {
     font-family: "poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-
 
 }
 .botao:hover{
@@ -69,10 +94,10 @@ p {
     padding-top: 100px;
     padding-bottom: 80px;
     color: var(--segunda);
-    display: flex;           /* coloca lado a lado */
-    align-items: center;     /* alinha verticalmente */
+    display: flex;          
+    align-items: center;   
     justify-content: space-between;
-    gap: 5px;               /* espaço entre texto e imagem */
+    gap: 5px;             
 }
 
 .text{
@@ -80,10 +105,18 @@ p {
 }
 .tecnologias{
     margin-top: 70px;
+    display: flex;
+    text-align: center;
+    flex-basis: calc(33.333% - 10px);
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .about, .tecnologias{
     color: var(--segunda);
+}
+.about{
+    margin-bottom: 80px;
 }
 
 
