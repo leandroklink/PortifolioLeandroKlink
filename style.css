@@ -68,6 +68,12 @@ h3{
     font-weight: 600;
 
 }
+.card:hover .textCard {
+    display: block;
+}
+.card:hover .cardImg {
+    display: none;
+}
 
 
 .about p{
