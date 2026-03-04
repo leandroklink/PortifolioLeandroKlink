@@ -38,8 +38,9 @@ h3{
     color: var(--primeira);
 }
 .card img{
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
+    
 
 }
 .card{
@@ -51,17 +52,23 @@ h3{
     font-weight: 600;
     font-style: normal;
     padding: 8px;
-    display: flex;
     gap: 10px;
     color: white;
     justify-content: center;
     text-align: center;
     transition: 0.3s;
     display: block;
+    height: 220px;
 }
 .card:hover {
     transform: scale(1.03);
 }
+.textCard{
+    display: none;
+    font-weight: 600;
+
+}
+
 
 .about p{
     margin-bottom: 30px;
