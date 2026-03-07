@@ -83,6 +83,7 @@ p {
     font-family: "poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    color: var(--primeira);
 }
 .botao{
     color: var(--primeira);
@@ -147,11 +148,25 @@ p {
     height: 60px;
     left: 0;
     top: 0;
-    color: var(--quarta);
-    padding: 10px;
     background-color: var(--quarta);
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 50 60px;
+    box-sizing: border-box;
+}
 
+.direita{
+    margin-left: auto;
+
+}
+
+
+.upbar a{
+    text-decoration: none;
+    color: var(--segunda);
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    margin: 10px;
 }
 .linkbar{
     color: var(--segunda);
