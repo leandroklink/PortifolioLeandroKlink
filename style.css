@@ -14,6 +14,8 @@ body{
     --quarta: #141418;
     --quinta: #6bb39b;
     --sexta: #588b7a;
+    --setima: #07792d;
+    --oitava: #0e0e13;
 }
 h1{
     font-family: "poppins", sans-serif;
@@ -48,9 +50,6 @@ h3{
     border-radius: 7px;
     color: var(--primeira);
     text-decoration: none;
-    font-family: "poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
     padding: 8px;
     gap: 10px;
     color: white;
@@ -75,9 +74,70 @@ h3{
     display: none;
 }
 
+.cardCertificacao{
+    border: 2px solid var(--primeira);
+    border-radius: 7px;
+    color: var(--primeira);
+    padding: 18px;
+    margin: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.4s;
+}
+
+.cardCertificacao:hover{
+    transform: scale(0.9);
+}
+
+.cardCertificacao h2{
+    margin: 0;
+
+}
+
+.cardCertificacao h3{
+    margin: 2px 0 8px 0;
+    text-align: center;
+}
+
+.cardCertificacao p{
+    margin: 0;
+}
+
+.cardCertificacao img{
+    width: 80px;
+    height: 80px;
+    grid-row: span 3;
+    justify-self: center;
+}
+
+.cardCertificacao:hover {
+    transform: scale(1.03);
+}
+
+.linkCert{
+    margin-top: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--primeira);
+    padding: 4px 8px;
+    background-color: #07792d;
+    font-family: "poppins", sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+    justify-self: start;
+
+}
+.linkCert:hover{
+
+    opacity: 0.8;
+}
 
 .about p{
-    margin-bottom: 30px;
+    margin-bottom: 30prgb(7, 143, 52)
 }
 p {
     font-family: "poppins", sans-serif;
@@ -134,6 +194,55 @@ p {
     margin: 0 auto;
 }
 
+.projetos{
+    margin-top: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha */
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.card h2{
+    color: var(--primeira);
+}
+.card img{
+    width: 120px;
+    height: 120px;
+    
+
+}
+.cardProjetos{
+    border: 2px solid var(--primeira);
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 8px;
+    gap: 10px;
+    color: white;
+    justify-content:center;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+    height: 480px;
+}
+.cardProjetos:hover {
+    transform: scale(1.03);
+}
+.cardProjetos p{
+
+    font-weight: 600;
+
+}
+
+.cardProjetos img{
+    width: 400px;
+
+}
+
+
+
 .about{
     color: var(--segunda);
 }
@@ -153,6 +262,7 @@ p {
     align-items: center;
     padding: 50 60px;
     box-sizing: border-box;
+    transition: background-color 0.4s ease;
 }
 
 .direita{
@@ -168,6 +278,9 @@ p {
     font-weight: 500;
     margin: 10px;
 }
+.upbar.scroll{
+    background-color: var(--oitava);
+}
 .linkbar{
     color: var(--segunda);
     padding: 5px;
@@ -180,6 +293,13 @@ p {
     height: 250px;
     object-fit: cover;
     
+}
+
+footer{
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    display: inline;
 }
 
 
