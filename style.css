@@ -218,29 +218,46 @@ p {
     border: 2px solid var(--primeira);
     border-radius: 7px;
     text-decoration: none;
-    padding: 8px;
+    padding: 1px;
     gap: 10px;
     color: white;
     justify-content:center;
     text-align: center;
     transition: 0.3s;
     display: block;
-    height: 480px;
+    height: 550px;
 }
 .cardProjetos:hover {
     transform: scale(1.03);
 }
 .cardProjetos p{
 
-    font-weight: 600;
+    font-weight: 500;
+
+}
+.cardProjetos h2{
+    font-weight: 550;
 
 }
 
 .cardProjetos img{
-    width: 400px;
+    width: 90%;
+    margin-top: 10px;
+    border: 3px solid var(--sexta);
+    border-radius: 5px;
+
+    
+}
+.tag{
+    color: var(--quarta);
+    border-radius: 18px;
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+    margin: 3px;
+    font-size: 300;
+
 
 }
-
 
 
 .about{
@@ -280,6 +297,10 @@ p {
 }
 .upbar.scroll{
     background-color: var(--oitava);
+}
+
+.upbar a:hover{
+    color: var(--terceria);
 }
 .linkbar{
     color: var(--segunda);
