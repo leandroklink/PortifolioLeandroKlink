@@ -129,6 +129,7 @@ h3{
     border-radius: 5px;
     display: inline-block;
     justify-self: start;
+    cursor: pointer;
 
 }
 .linkCert:hover{
@@ -226,6 +227,7 @@ p {
     transition: 0.3s;
     display: block;
     height: 550px;
+    cursor: pointer;
 }
 .cardProjetos:hover {
     transform: scale(1.03);
@@ -294,6 +296,7 @@ p {
     font-family: "poppins", sans-serif;
     font-weight: 500;
     margin: 10px;
+    cursor: pointer;
 }
 .upbar.scroll{
     background-color: var(--oitava);
@@ -331,13 +334,14 @@ footer{
     transform: translate(-50%, -50%);
     width: 1400px;
     height: 700px;
-    padding: 20px;
+    padding: 0px 18px 0px 18px;
     background: #fff;
     border: 2px solid var(--primeira);
     background-color: var(--oitava);
     border-radius: 8px;
     z-index: 1000;
-    /*display: none;*/
+    display: none;
+
   
 }
 .PopUpOculto{
@@ -347,12 +351,24 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-    /*display: none;*/
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     transition: opacity 0.3s ease;
 
+}
+.fechar{
+    cursor: pointer;
+    background-color: var(--quinta);
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--quarta);
+    display: inline-block;
+    top: 0;
+}
+.ConteudoProjeto{
+    display: none;
 }
 
 @media (max-width: 900px){
