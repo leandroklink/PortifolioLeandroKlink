@@ -5,7 +5,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /*overglow: hiddem; usar isso em função futura*/
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 :root{
     --primeira: #daf3ea;   
@@ -358,6 +360,10 @@ footer{
     transition: opacity 0.3s ease;
 
 }
+
+.conteudoProjeto{
+    display: none;
+}
 .fechar{
     cursor: pointer;
     background-color: var(--quinta);
@@ -367,9 +373,7 @@ footer{
     display: inline-block;
     top: 0;
 }
-.ConteudoProjeto{
-    display: none;
-}
+
 
 @media (max-width: 900px){
     .tecnologias{

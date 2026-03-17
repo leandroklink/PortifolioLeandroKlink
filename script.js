@@ -13,22 +13,33 @@ window.addEventListener("scroll", function(){
 });
 
 //Abrir pop-up
-
 let cardP = document.querySelectorAll(".cardProjetos");
 
 cardP.forEach(card => {
 
-    card.addEventListener('click', () =>{
-        document.querySelector(".PopUpOculto").style = "display: block"
-        document.querySelector(".PopUpProjetos").style = "display: block"
+    card.addEventListener("click", () => {
+
+        let projeto = card.dataset.projeto;
+
+        document.querySelector(".PopUpOculto").style.display = "block";
+        document.querySelector(".PopUpProjetos").style.display = "block";
+
+        document.querySelectorAll(".conteudoProjeto").forEach(c => {
+            c.style.display = "none";
+        });
+
+        document.getElementById(projeto).style.display = "block";
+
     });
+
 });
 
-function fechar(){
-    document.querySelector(".PopUpOculto").style = "display: none"
-    document.querySelector(".PopUpProjetos").style = "display: none"
-}
 
+//função de fechar
+function fechar(){
+    document.querySelector(".PopUpOculto").style.display = "none";
+    document.querySelector(".PopUpProjetos").style.display = "none";
+}
 
 //fechar pop-up com Esc
 
@@ -36,7 +47,7 @@ function fechar(){
 
 document.addEventListener('keydown', function(e){
     if (e.key === "Escape"){
-        if (document.querySelector(".PopUpProjetos").style = "display: block"){
+        if (document.querySelector(".PopUpProjetos").style.display === "block"){
             fechar();
         }
     }
