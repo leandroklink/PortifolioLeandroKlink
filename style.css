@@ -333,8 +333,8 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    width: 75%;
+    height: 75%;
     padding: 24px 28px;
     background-color: var(--oitava);
     border: 2px solid var(--primeira);
@@ -365,10 +365,12 @@ footer{
 .tituloProjeto{
     text-align: center;
     font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: var(--primeira); /* ajuste para a cor que quiser */
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--quinta);
+
 }
+
 
 /* Corpo: texto à esquerda, mídia à direita */
 .projetoBody {
@@ -380,7 +382,7 @@ footer{
 .projetoTexto {
     flex: 1;
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 /* Coluna da direita: vídeo em cima, link embaixo */
@@ -390,7 +392,7 @@ footer{
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
-    width: 340px; /* ajuste conforme precisar */
+    width: 720px;
 }
 
 .videoProjeto {

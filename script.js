@@ -28,7 +28,7 @@ cardP.forEach(card => {
             c.style.display = "none";
         });
 
-        document.getElementById(projeto).style.display = "flex";
+        document.getElementById(projeto).style.display = "block";
 
     });
 
