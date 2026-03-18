@@ -28,7 +28,7 @@ cardP.forEach(card => {
             c.style.display = "none";
         });
 
-        document.getElementById(projeto).style.display = "block";
+        document.getElementById(projeto).style.display = "flex";
 
     });
 
@@ -40,10 +40,8 @@ function fechar(){
     document.querySelector(".PopUpOculto").style.display = "none";
     document.querySelector(".PopUpProjetos").style.display = "none";
 }
-
+ 
 //fechar pop-up com Esc
-
-
 
 document.addEventListener('keydown', function(e){
     if (e.key === "Escape"){

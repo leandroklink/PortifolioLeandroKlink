@@ -328,24 +328,24 @@ footer{
     display: inline;
 }
 
-.PopUpProjetos{
-
+.PopUpProjetos {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
-    padding: 0px 18px 0px 18px;
-    background: #fff;
-    border: 2px solid var(--primeira);
+    padding: 24px 28px;
     background-color: var(--oitava);
+    border: 2px solid var(--primeira);
     border-radius: 8px;
     z-index: 1000;
     display: none;
+    overflow-y: auto;
+}
 
   
-}
+
 .PopUpOculto{
     position: fixed;
     top: 0;
@@ -361,9 +361,72 @@ footer{
 
 }
 
-.conteudoProjeto{
-    display: none;
+/* Título ocupa a linha toda, sem formatação estranha */
+.tituloProjeto{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primeira); /* ajuste para a cor que quiser */
 }
+
+/* Corpo: texto à esquerda, mídia à direita */
+.projetoBody {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.projetoTexto {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Coluna da direita: vídeo em cima, link embaixo */
+.projetoMidia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    width: 340px; /* ajuste conforme precisar */
+}
+
+.videoProjeto {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.github {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--primeira);
+    border: 1px solid var(--primeira);
+    padding: 6px 14px;
+    border-radius: 4px;
+
+}
+
+.github:hover {
+    background-color: var(--primeira);
+    color: #fff;
+}
+
+/* Responsivo: empilha em telas menores */
+@media (max-width: 700px) {
+    .projetoBody {
+        flex-direction: column;
+    }
+
+    .projetoMidia {
+        width: 100%;
+    }
+}
+
 .fechar{
     cursor: pointer;
     background-color: var(--quinta);
