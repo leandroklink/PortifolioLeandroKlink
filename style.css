@@ -169,7 +169,8 @@ p {
 .container{
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 1px;
+    width: 100%;
 }
 
 .first{  
@@ -273,7 +274,7 @@ p {
 
 
 .upbar{
-    width: 100%;
+    width:  100%;
     position: fixed;
     height: 60px;
     left: 0;
@@ -281,7 +282,9 @@ p {
     background-color: var(--quarta);
     display: flex;
     align-items: center;
-    padding: 50 60px;
+    padding: 60 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
     transition: background-color 0.4s ease;
 }
@@ -290,7 +293,6 @@ p {
     margin-left: auto;
 
 }
-
 
 .upbar a{
     text-decoration: none;
@@ -361,7 +363,6 @@ footer{
 
 }
 
-/* Título ocupa a linha toda, sem formatação estranha */
 .tituloProjeto{
     text-align: center;
     font-size: 1.3rem;
@@ -371,12 +372,15 @@ footer{
 
 }
 
-
 /* Corpo: texto à esquerda, mídia à direita */
 .projetoBody {
     display: flex;
     gap: 32px;
     align-items: flex-start;
+}
+.esquerda a{
+    margin: 0;
+    padding: 0;
 }
 
 .projetoTexto {
@@ -418,17 +422,6 @@ footer{
     opacity: 70%;
 }
 
-/* Responsivo: empilha em telas menores */
-@media (max-width: 700px) {
-    .projetoBody {
-        flex-direction: column;
-    }
-
-    .projetoMidia {
-        width: 100%;
-    }
-}
-
 .fechar{
     cursor: pointer;
     background-color: var(--quinta);
@@ -440,14 +433,93 @@ footer{
 }
 
 
+/* Responsivo: empilha em telas menores */
+@media (max-width: 1300px) {
+    .projetoBody {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .container{
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
 @media (max-width: 900px){
     .tecnologias{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 500px){
-    .tecnologias{
-        grid-template-columns: 1fr;
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
     }
+
+    .container {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+    .projetoMidia {
+        width: 100%;
+    }
+    .direita{
+        display: none;
+    }
+    .first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile {
+        width: 150px; /* ajusta tamanho da foto */
+        height: auto;
+    }
+    body{
+        text-align: center;
+    }
+    .text {
+    max-width: 500px;
+    }
+    .tecnologias{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 15px;
+    }
+    .card{
+        height: auto; /* remove altura fixa */
+        padding: 10px;
+    }
+    .card imag {
+        width: 70px;
+        height: 70px;
+    };
+    .card h2 {
+        font-size: 10px;
+    }
+    .textCard {
+        font-size: 12px;
+    }
+    .projetos{
+        grid-template-columns: repeat(1, 1fr); /* 2 por linha */
+    }
+    .cardCertificacao{
+        display: block;
+    }
+    .cardCertificacao img{
+        display: none;
+    }
+
+
 }

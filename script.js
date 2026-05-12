@@ -50,3 +50,19 @@ document.addEventListener('keydown', function(e){
         }
     }
 })
+
+
+
+
+function mostrarTexto(card) {
+    const texto = card.querySelector('.textCard');
+    const img = card.querySelector('.cardImg');
+
+    texto.style.display = 'block';
+    img.style.display = 'none';
+
+    setTimeout(() => {
+        texto.style.display = 'none';
+        img.style.display = 'block';
+    }, 3000); // 3 segundos
+}
